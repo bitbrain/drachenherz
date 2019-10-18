@@ -1,0 +1,75 @@
+body {
+  background: url('../images/background.jpg');
+  background-position: top center;
+  background-size: auto 120%;
+  background-repeat: no-repeat;
+}
+
+.frame {
+  display: inline-block;
+  border: $color-button-border solid 0.1em;
+  background-color: $color-button-border-inner;
+  padding: 0.1em 0.15em;
+  border-radius: $dim-input-radius * 1.5;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: top;
+  height: $dim-input-height;
+}
+
+.button {
+  display: absolute;
+  margin: auto;
+  border-radius: $dim-input-radius;
+  background-color: $color-button-background;
+  padding-top: $dim-input-padding;
+  padding-left: $dim-input-padding * 4;
+  padding-right: $dim-input-padding * 4;
+  padding-bottom: $dim-input-padding;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $dim-input-font-size;
+  color: $color-foreground;
+  border: $color-button-background-highlight solid 0.08em;
+  text-shadow: 0 0 0.15em black;
+  width: $dim-input-width;
+
+  &:hover {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d31515+1,6b0408+100 */
+    background: #d31515; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #d31515 1%, #6b0408 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #d31515 1%,#6b0408 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #d31515 1%,#6b0408 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d31515', endColorstr='#6b0408',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+
+  &:active {
+    border: lighten($color-button-background-highlight, 20%) solid 0.08em;
+    margin-top: 0.1em;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff1919+1,960608+100 */
+    background: #ff1919; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #ff1919 1%, #960608 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #ff1919 1%,#960608 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #ff1919 1%,#960608 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1919', endColorstr='#960608',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+}
+
+.menu > .frame {
+  margin: 0 0.1em;
+}
+
+.banner {
+  height: 20em;
+  width: 100%;
+}
+.content {
+  font-size: 1.2em;
+  background-color: rgba(0,0,0,0.5);
+  text-align: left;
+  padding: 1em;
+  width:52.4em;
+  margin-top: 0.7em;
+  height: auto;
+  line-height: 1.5em;
+}

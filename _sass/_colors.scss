@@ -1,0 +1,8 @@
+$color-background: black;
+$color-foreground: white;
+
+$color-button-background: #6B0408;
+$color-button-background-highlight: lighten($color-button-background, 10%);
+$color-button-border-inner: darken($color-button-background, 12%);
+$color-button-border: #4f4f4f;
+$color-button-border-highlight: lighten($color-button-border, 50%);
