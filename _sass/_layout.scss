@@ -1,7 +1,7 @@
 body {
   background: url('../images/background.jpg');
   background-position: top center;
-  background-size: auto 120%;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
@@ -18,6 +18,7 @@ body {
 }
 
 .button {
+  font-weight:800;
   display: absolute;
   margin: auto;
   border-radius: $dim-input-radius;
@@ -37,9 +38,9 @@ body {
   &:hover {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d31515+1,6b0408+100 */
     background: #d31515; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #d31515 1%, #6b0408 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover,  #d31515 1%,#6b0408 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center,  #d31515 1%,#6b0408 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-radial-gradient(center, ellipse cover,  $color-button-background-highlight 1%,  $color-button-background 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  $color-button-background-highlight 1%, $color-button-background 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  $color-button-background-highlight 1%, $color-button-background 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d31515', endColorstr='#6b0408',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   }
 
@@ -48,9 +49,9 @@ body {
     margin-top: 0.1em;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff1919+1,960608+100 */
     background: #ff1919; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #ff1919 1%, #960608 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover,  #ff1919 1%,#960608 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center,  #ff1919 1%,#960608 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-radial-gradient(center, ellipse cover,  $color-button-background-vibrant 1%, $color-button-background-highlight 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  $color-button-background-vibrant 1%,$color-button-background-highlight 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  $color-button-background-vibrant 1%,$color-button-background-highlight 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1919', endColorstr='#960608',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   }
 }
@@ -62,13 +63,14 @@ body {
 .banner {
   height: 20em;
   width: 100%;
+  background: url('../images/logo.png') center center no-repeat;
 }
 .content {
   font-size: 1.2em;
   background-color: rgba(0,0,0,0.5);
   text-align: left;
   padding: 1em;
-  width:52.4em;
+  width:40.4em;
   margin-top: 0.7em;
   height: auto;
   line-height: 1.5em;
