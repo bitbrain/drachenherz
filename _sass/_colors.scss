@@ -1,9 +1,9 @@
 $color-background: black;
 $color-foreground: white;
 
-$color-button-background: #2e0090;
-$color-button-background-vibrant: #ff1800;
-$color-button-background-highlight: lighten($color-button-background, 15%);
+$color-button-background: #222222;
+$color-button-background-vibrant: #ff2800;
+$color-button-background-highlight: lighten($color-button-background, 5%);
 $color-button-border-inner: darken($color-button-background, 12%);
-$color-button-border: #241043;
-$color-button-border-highlight: lighten($color-button-border, 50%);
+$color-button-border: #1f1f1f;
+$color-button-border-highlight: #6f1500;
