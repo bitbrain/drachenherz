@@ -8,3 +8,10 @@ html, body {
   overflow: visible;
   height: 100%;
 }
+
+img {
+  width: 100%;
+  border-radius: $dim-input-radius * 1.5;
+  box-shadow: 0 0 1em black;
+  margin: 0 0;
+}
