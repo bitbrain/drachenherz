@@ -5,10 +5,24 @@ body {
   background-repeat: no-repeat;
 }
 
+h1, h2, h3 {
+  color: $color-primary-highlight;
+  text-shadow: 0 0 0.3em $color-secondary;
+}
+
+a {
+  color: $color-primary-highlight;
+  text-shadow: 0 0 0.4em $color-secondary;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-secondary-highlight;
+    text-shadow: 0 0 0.5em $color-secondary;
+  }
+}
+
 .button {
   font-weight:800;
-  display: absolute;
-  margin: auto;
   border-radius: $dim-input-radius;
   background-color: $color-button-background;
   padding-top: $dim-input-padding;
@@ -17,12 +31,10 @@ body {
   padding-bottom: $dim-input-padding;
   margin: 0 0.1em;
   text-decoration: none;
-  display: inline-block;
   font-size: $dim-input-font-size;
-  color: #d53500;
+  color: $color-primary;
   border: $color-button-background-highlight solid 0.08em;
   text-shadow: 0 0 0.25em #ff0000;
-  width: $dim-input-width;
 
   &:hover {
     color: #ff4f00;
@@ -36,9 +48,9 @@ body {
   }
 
   &:active {
-    box-shadow: 0 0 2.5em #ff0000;
+    box-shadow: 0 0 2.5em $color-secondary;
     color: #ff8532;
-    border: #912000 solid 0.08em;
+    border: #912000 solid 0.1em;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff1919+1,960608+100 */
     background: #ff1919; /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover,  $color-button-background-vibrant 1%, $color-button-border-highlight 100%); /* FF3.6-15 */
@@ -48,13 +60,40 @@ body {
   }
 }
 
-.frame {
+.menu {
+  background: rgba(20, 15, 15, 1);
+  -moz-box-shadow: inset 0 0 2em #100000;
+  -webkit-box-shadow: inset 0 0 2em #100000;
+  box-shadow: inset 0 0 2em #100000;
+  border-radius: $dim-input-radius;
+  border: 0.13em solid $color-button-border;
+  margin-top: -2.7em;
+  height: 4em;
+  width:52.9em;
+  display: inline-block;
+  display: table;
+  table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 1.0em;
+  & > .button {
+    vertical-align: middle;
+    display: table-cell;
+  }
+}
+
+.box {
+  width: 60em;
   margin-bottom: 0.5em;
   background-color:rgba(0.1, 0.1, 0.1, 0.5);
   display: inline-block;
   padding: 0.5em;
-  border: $color-button-border solid 0.1em;
+  border: $color-button-border solid 0.13em;
   border-radius: $dim-input-radius * 1.5;
+  text-align: center;
+  -moz-box-shadow: inset 0 0 3em #110000;
+  -webkit-box-shadow: inset 0 0 3em #110000;
+  box-shadow: inset 0 0 3em #110000;
 }
 
 .banner {
@@ -63,12 +102,14 @@ body {
   padding-top: 10em;
   background: url('../images/logo.png') center center no-repeat;
 }
+
 .content {
   font-size: 1.2em;
   text-align: justify;
   padding: 0.5em 0.8em;
-  width:39.9em;
+  padding-top: 1.2em;
+  width:46.0em;
   height: auto;
   line-height: 1.5em;
-  display: block;
+  display: inline-block;
 }

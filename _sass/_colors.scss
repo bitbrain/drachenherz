@@ -1,6 +1,11 @@
 $color-background: black;
 $color-foreground: white;
 
+$color-primary: #d53500;
+$color-secondary: #ff0000;
+$color-secondary-highlight: #ff8532;
+$color-primary-highlight: #ff4f00;
+
 $color-button-background: #222222;
 $color-button-background-vibrant: #ff2800;
 $color-button-background-highlight: lighten($color-button-background, 5%);
