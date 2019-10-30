@@ -29,14 +29,16 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+menu:
+  - url: /
+    text: Über uns
+    icon: burn
+  - url: /team
+    text: Das Team
+    icon: crown
+  - url: /screenshots
+    text: Screenshots
+    icon: shield-alt
+  - url: /bewerben
+    text: Bewerben
+    icon: feather-alt

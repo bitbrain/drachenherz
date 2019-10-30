@@ -5,10 +5,14 @@ $color-primary: #d53500;
 $color-secondary: #ff0000;
 $color-secondary-highlight: #ff8532;
 $color-primary-highlight: #ff4f00;
+$color-contrast-primary: #00ff9c;
+$color-contrast-secondary: #81ff00;
 
-$color-button-background: #222222;
+$color-button-background: #330d09;
 $color-button-background-vibrant: #ff2800;
-$color-button-background-highlight: lighten($color-button-background, 5%);
+$color-button-background-highlight: #36723d;
 $color-button-border-inner: darken($color-button-background, 12%);
-$color-button-border: #1f1f1f;
+$color-button-border: #2b0c0c;
 $color-button-border-highlight: #6f1500;
+
+$color-menu-background: #1a0a0a;
