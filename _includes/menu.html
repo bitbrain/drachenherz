@@ -1,7 +1,10 @@
 <div>
 <div class="menu frame">
 {% for link in site.menu %}
-       {% assign current = link.url %}
+       {% assign current = link.url|append:".html" %}
+       {% if link.url == '/' %}
+       {% assign current = '/' %}
+       {% endif %}
        <a href="{{link.url}}" class="button {% if page.url == current %}current{% endif %}"
        {% if link.target != null %}
         target="{{link.target}}"

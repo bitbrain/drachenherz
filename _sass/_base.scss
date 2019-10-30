@@ -9,6 +9,10 @@ html, body {
   height: 100%;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 img {
   width: 100%;
   border-radius: $dim-input-radius * 1.5;
