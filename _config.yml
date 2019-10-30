@@ -33,12 +33,12 @@ menu:
   - url: /
     text: Über uns
     icon: burn
-  - url: /team
+  - url: /team/
     text: Das Team
     icon: crown
-  - url: /screenshots
+  - url: /screenshots/
     text: Screenshots
     icon: shield-alt
-  - url: /bewerben
+  - url: /bewerben/
     text: Bewerben
     icon: feather-alt
