@@ -117,4 +117,22 @@ a {
   height: auto;
   line-height: 1.5em;
   display: inline-block;
+  min-height: 30em;
+}
+
+.footer {
+  margin: 5em 0;
+  font-size: 0.7em;
+  color: #322;
+
+  & > a {
+    color: white;
+    text-shadow: none;
+    text-decoration: underline;
+    color: #422;
+
+    &:hover {
+      color: #533;
+    }
+  }
 }
